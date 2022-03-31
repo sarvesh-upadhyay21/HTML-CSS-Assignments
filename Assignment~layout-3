@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout-2</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="headContent">
+          <h2>Sample Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi
+            cumque saepe earum, veritatis eveniet eum mollitia tempora? Optio,
+            hic vitae. Commodi amet doloribus tempore perspiciatis nulla facilis
+            nobis, nisi modi iste, eius porro dolore officia consequatur quae,
+            repellendus a.
+          </p>
+          <button>call to action!</button>
+        </div>
+      </div>
+      <hr />
+      <div class="cardContainer">
+        <span class="containerHeading">Latest Feature</span>
+        <div class="cards">
+          <div class="card">
+            <div class="cardImg">
+              <img
+                src="https://via.placeholder.com/800X500/CCC/808080%20?Text=Digital.com%20C/O%20https://placeholder.com/"
+                alt=""
+              />
+            </div>
+            <div class="cardContent">
+              <h3>Feature Label</h3>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia tempora?</p>
+              <div class="btn">
+                <button class="first">Buy More!</button>
+                <button class="second">More Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImg">
+              <img
+                src="https://via.placeholder.com/800X500/CCC/808080%20?Text=Digital.com%20C/O%20https://placeholder.com/"
+                alt="Digital.com"
+                />
+            </div>
+            <div class="cardContent">
+              <h3>Feature Label</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia tempora?</p>
+              <div class="btn">
+                <button class="first">Buy More!</button>
+                <button class="second">More Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImg">
+              <img
+                src="https://via.placeholder.com/800X500/CCC/808080%20?Text=Digital.com%20C/O%20https://placeholder.com/"
+                alt="Digital.com"
+              />
+            </div>
+            <div class="cardContent">
+              <h3>Feature Label</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia tempora?</p>
+              <div class="btn">
+                <button class="first">Buy More!</button>
+                <button class="second">More Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImg">
+              <img
+                src="https://via.placeholder.com/800X500/CCC/808080%20?Text=Digital.com%20C/O%20https://placeholder.com/"
+                alt=""
+              />
+            </div>
+            <div class="cardContent">
+              <h3>Feature Label</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia tempora?</p>
+              <div class="btn">
+                <button class="first">Buy More!</button>
+                <button class="second">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bottomHr" />
+        <div class="copyright">
+          <p>copyright your website 2022</p>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 80%;
+    margin: auto;
+}
+.head{  
+    margin: auto;
+    height: 200px;
+    display: flex; 
+    border-radius: 10px;
+    margin-top: 3%;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 216);
+
+}
+.button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -12px rgba(0, 0, 0, 0.25);
+  }
+hr{
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(235, 235, 232);
+    margin-top: 20px;
+
+    margin-bottom: 40px;
+
+
+}
+
+
+.card{
+width: 24%;
+padding: 2px;
+margin-top: 5px;
+border-radius: 2px;
+border: 1px solid rgb(240, 237, 237);
+}
+
+.cardImg img{
+    width: 100%;  
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.headContent{
+    padding: 60px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+.headContent h2{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.headContent p{
+    font-size: 13px;
+    padding-top:5px;
+
+}
+.headContent button{
+    padding: 7px;
+    background-color: rgb(20, 92, 235);
+    border-radius: 6px;
+    width: 90px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+.cardContent{
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.cardContent h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.cardContent p{
+    font-size: 12px;
+    margin-top: 3px;
+    padding: 8px;
+    text-align: justify;
+
+}
+.btn .first{
+    margin-right: 5px;
+    padding: 8px;
+    background-color: rgb(20, 20, 235);
+    border-radius: 5px;
+    width: 80px;
+    margin-top:5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+
+}
+.btn .second{
+background-color: #fff;
+padding: 7px;
+border-radius: 5px;
+color: black;
+font-size: 12px;
+cursor: pointer;
+border: 1px solid rgb(97, 93, 93);
+font-size: 12px;
+}
+.containerHeading{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+
+
+}
+.bottomHr{
+    margin-top: 50px;
+    bottom: 50px;
+}
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+    .card{
+      width: 100%;
+    }
+  }
