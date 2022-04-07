@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0%;
+    width: 100%;
+    border: 1px solid rgb(14, 14, 14);
+    padding: 10%;
+ 
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid black;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  div{
+    overflow-x:auto;
+  }
+  h2{
+      text-align: center;
+      background-color: aqua;
+  }
+  p{
+      text-align: center;
+      color: black;
+  }
+  @media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }
