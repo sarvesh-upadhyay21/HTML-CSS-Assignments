@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    margin: 10PX;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgb(72, 144, 238);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(2, 17, 24);
+  }
+  li {
+    float: left;
+    border-right:2 px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
