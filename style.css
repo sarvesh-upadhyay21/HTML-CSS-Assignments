@@ -1,33 +1,76 @@
-table {
-    border-collapse: collapse;
-    border-spacing: 0%;
+.container{
     width: 100%;
-    border: 1px solid rgb(14, 14, 14);
-    padding: 10%;
- 
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 16px;
-    border: 1px solid black;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  div{
-    overflow-x:auto;
-  }
-  h2{
-      text-align: center;
-      background-color: aqua;
-  }
-  p{
-      text-align: center;
-      color: black;
-  }
-  @media screen and (min-width: 480px) {
-    #leftsidebar {width: 200px; float: left;}
-    #main {margin-left: 216px;}
-  }
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divcontainer{
+    width: 600px;
+    display: grid;
+    height: 400px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.item {
+    position: relative;
+}
+
+.item1 {
+    border: solid 1px rgb(62, 234, 39);
+
+}
+
+.item2 {
+    border: solid 1px yellow;
+
+
+}
+
+.item3 {
+    border: solid 1px rgb(235, 85, 197);
+
+
+}
+
+.item4 {
+    border: solid 1px rgb(224, 10, 20);
+
+
+}
+
+.box {
+    border: solid 2px rgb(200, 19, 31);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.box1 {
+
+    bottom: 0px;
+    right: 0;
+    border: solid 2px rgb(200, 19, 31);
+
+
+}
+
+.box2 {
+
+    position: absolute;
+    bottom: 0%;
+    border: solid 2px rgb(200, 19, 31);
+
+}
+
+.box3 {
+
+    position: absolute;
+    right: 0;
+    border: solid 2px rgb(200, 19, 31);
+
+}
