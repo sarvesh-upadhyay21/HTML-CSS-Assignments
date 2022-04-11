@@ -88,7 +88,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -96,6 +96,21 @@
       float: right;
       display: block;
     }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
   }
   
   
